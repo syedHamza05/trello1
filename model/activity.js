@@ -6,7 +6,7 @@ const activitySchema = new mongoose.Schema({
         required: true
     },
     boardId: {
-        type: Schema.Types.ObjectId,
+        type: mongoose.Types.ObjectId,
         ref: 'board',
         required: true
     },

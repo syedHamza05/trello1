@@ -5,18 +5,19 @@ const boardSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    userId: {
-        type: Schema.Types.ObjectId,
-        ref: 'user',
-        required: true
-    },
-    img:{
-        data: Buffer,
-        contentType: String
-    }
-},
-{
-    timestamps: true
+    // userId: {
+    //     type: mongoose.Types.ObjectId,
+    //     ref: 'user',
+    // },
+    // img:{
+    //     data: Buffer,
+    //     contentType: String
+    // }
+// },
+// {
+    // timestamps: true
 })
 
-module.exports = mongoose.model('board', boardSchema)
+const Board = mongoose.model('board', boardSchema)
+
+module.exports = Board

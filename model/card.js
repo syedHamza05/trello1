@@ -7,12 +7,12 @@ const cardSchema = new mongoose.Schema({
         required: true
     },
     listId: {
-        type: Schema.Types.ObjectId,
+        type: mongoose.Types.ObjectId,
         ref: 'list',
         required: true
     },
     boardId: {
-        type: Schema.Types.ObjectId,
+        type: mongoose.Types.ObjectId,
         ref: 'board',
         required: true
     },
